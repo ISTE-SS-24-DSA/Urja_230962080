@@ -1,0 +1,23 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int main() {
+    int a,i;
+    cout<<"Enter the number of elements in array"<<endl;
+    cin>>a;
+    vector <int> N(a);
+    cout<<"Enter the elements:"<<endl;
+    
+    for(i=0;i<a;i++)
+        cin>>N[i];
+    
+    cout<<"Forward iteration:"<<endl;
+    for(vector<int>::iterator it=N.begin();it!=N.end();it++)
+    cout<<*it<<endl;
+    
+    cout<<"Reverse iteration"<<endl;
+    
+    for(vector<int>::reverse_iterator rit=N.rbegin();rit!=N.rend();rit++)
+    cout<<*rit<<endl;
+    return 0;
+}
