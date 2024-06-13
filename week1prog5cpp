@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int i,j,k,p=4;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=p;j++)
+        {
+            cout<<" ";
+        }
+        for(k=1;k<=2*i-1;k++)
+        {
+            cout<<"*";
+        }
+        p--;
+        
+        cout<<"\n";
+    }
+}
