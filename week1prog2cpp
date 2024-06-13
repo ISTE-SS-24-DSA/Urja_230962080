@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int a,n=0,temp,i,num=0;
+    cout<<"Enter a number you want to reverse"<<endl;
+    cin>>a;
+    temp=a;
+    while(temp!=0)
+    {
+        temp=temp/10;
+        n++;
+    }
+    temp=a;
+    for(i=1;i<=n;i++)
+    {
+        num=(num*10)+(temp%10);
+        temp=temp/10;
+    }
+    cout<<num<<endl;
+}
